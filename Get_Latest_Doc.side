@@ -124,7 +124,7 @@
     "id": "1aac574d-2dac-4de3-ba46-cb281fb19341",
     "name": "Get_Latest_Doc_Suit",
     "persistSession": true,
-    "parallel": true,
+    "parallel": false,
     "timeout": 300,
     "tests": ["ff01f8b8-9839-4f02-b17e-6a6f4c5a4fca"]
   }],
