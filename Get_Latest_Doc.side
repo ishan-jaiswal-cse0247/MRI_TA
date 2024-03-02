@@ -1,0 +1,133 @@
+{
+  "id": "173047fb-2e0b-4fde-b2da-1b23d7452e33",
+  "version": "2.0",
+  "name": "Get_Latest_Doc",
+  "url": "https://www.meity.gov.in/archive-data",
+  "tests": [{
+    "id": "6d15b7a3-e775-4b04-9acd-fdd99eafc04b",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "ff01f8b8-9839-4f02-b17e-6a6f4c5a4fca",
+    "name": "Getting_Latest_Doc",
+    "commands": [{
+      "id": "85d90967-4f7d-40c9-8e91-80afe1b5b8a5",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.meity.gov.in/archive-data",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c53f7159-3108-4396-b6bf-3749f88136f6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8cde9cf-e362-41fd-9f06-ad8410b2dc72",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-type",
+      "targets": [
+        ["id=edit-type", "id"],
+        ["name=type", "name"],
+        ["css=#edit-type", "css:finder"],
+        ["xpath=//select[@id='edit-type']", "xpath:attributes"],
+        ["xpath=//div[@id='edit-type-wrapper']/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6f43ac2-a413-46a4-b3f3-55110689e840",
+      "comment": "",
+      "command": "select",
+      "target": "id=edit-type",
+      "targets": [],
+      "value": "label=Whats New"
+    }, {
+      "id": "22030101-6867-4fe9-b7e1-8803f97a0ab0",
+      "comment": "",
+      "command": "click",
+      "target": "id=edit-submit-archive-data",
+      "targets": [
+        ["id=edit-submit-archive-data", "id"],
+        ["css=#edit-submit-archive-data", "css:finder"],
+        ["xpath=//input[@id='edit-submit-archive-data']", "xpath:attributes"],
+        ["xpath=//form[@id='views-exposed-form-archive-data-page']/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce9adce2-7778-4b8a-8c30-ad379b85e275",
+      "comment": "",
+      "command": "click",
+      "target": "css=.views-row-first a",
+      "targets": [
+        ["linkText=Notification-Call for Proposals R&D in IT", "linkText"],
+        ["css=.views-row-first a", "css:finder"],
+        ["xpath=//a[contains(text(),'Notification-Call for Proposals R&D in IT')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div[2]/div/div[2]/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/content/call-project-proposal')]", "xpath:href"],
+        ["xpath=//td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Notification-Call for Proposals R&D in IT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccba4c3a-761c-4592-b91a-12b7a0abcf8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.file > a",
+      "targets": [],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7514",
+      "windowTimeout": 2000
+    }, {
+      "id": "1b359042-8d51-46c4-9bce-9e974db16fba",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1dd0325-6c22-4da4-bde3-80de77b5bfc2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7514}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da14f862-bc1d-4f5c-934e-90b790298b10",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6de0f746-ac06-47e3-83df-41d6bd9a16e6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a5e0c684-42be-4d99-b620-72168051de7f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6d15b7a3-e775-4b04-9acd-fdd99eafc04b"]
+  }, {
+    "id": "1aac574d-2dac-4de3-ba46-cb281fb19341",
+    "name": "Get_Latest_Doc_Suit",
+    "persistSession": true,
+    "parallel": true,
+    "timeout": 300,
+    "tests": ["ff01f8b8-9839-4f02-b17e-6a6f4c5a4fca"]
+  }],
+  "urls": ["https://www.meity.gov.in/archive-data"],
+  "plugins": []
+}
